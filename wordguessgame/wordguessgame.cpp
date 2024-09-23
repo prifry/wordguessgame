@@ -12,6 +12,9 @@ Compile command: g++ wordguessgame.cpp -o wordguessgame.out
 #include <cstdlib>
 using namespace std;
 
+void add_word(); // Function prototype for add_word. Declaring a prototype of
+                // the function (void add_word();) at the top informs the compiler about its existence, even though the actual implementation is written later in the code.
+
 string secret_word = "WATERMELON";
 map<char, bool> guessed_word;
 vector<char> wrong_guesses; // vector stores a list of elements
@@ -116,6 +119,13 @@ void gameOver()
     else
     {
         cout << "Congratulations! You guessed the secret word!" << endl;
+           cout << "Would you like to add a new secret word to the game?(y/n): ";
+        char answer;
+        cin >> answer;
+        if (answer == 'y')
+        {
+            add_word();
+        }
         
     }
 }
@@ -180,13 +190,6 @@ void save_file(vector<string> new_list)
 }
 void add_word()
 {
-    cout << "Would you like to add a new secret word to the game?(y/n): ";
-        char answer;
-        cin >> answer;
-        if (answer == 'y')
-        {
-            add_word();
-        }
     cout << "Write the new secret word with capital letters." << endl;
     string new_word;
     cin >> new_word;
@@ -212,5 +215,5 @@ int main()
         guess();
     }
     gameOver();
-    add_word();
+   
 }
