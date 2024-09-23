@@ -1,4 +1,4 @@
-# wordguessgame
+# Word Guess Game
 Guess the Secret Word Game
 This is a simple C++ console-based word guessing game where the player tries to guess a randomly selected secret word from a predefined list. The game allows for adding new words and keeps track of wrong guesses.
 
