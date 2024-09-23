@@ -47,9 +47,17 @@ Copy code
 ├── wordguessgame.cpp    # Main game file
 ├── secretWord.txt       # File containing list of secret words
 └── README.md            # Project documentation
-Author
+# Author
 Guided by: Gabriel Fernandes de Oliveira 
 Coded by: Priscila Fry
 Platform: Alura
 License
 This project is for educational purposes.
+# Output
+![outputworguessgame](https://github.com/user-attachments/assets/47a0678d-9438-441c-877a-ca3087678f4f)
+
+
+![outputguesswordgame2](https://github.com/user-attachments/assets/21581e18-efdf-4a80-8e6f-1644d956007d)
+
+![image](https://github.com/user-attachments/assets/e592feee-61e6-4c2c-9bde-1108414550c5)
+
